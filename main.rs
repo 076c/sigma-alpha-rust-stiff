@@ -26,4 +26,12 @@ fn main() {
 
     greet_person(&person);
     println!("{} is {} years old.", what_is_name(&person), what_is_age(&person));
+
+    let mut james: Person = Person {
+        name: "James",
+        age: 26
+    };
+
+    greet_person(&james);
+    println!("but {} is {} years old.", what_is_name(&james), what_is_age(&james));
 }
